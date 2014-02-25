@@ -126,20 +126,20 @@
 
 // Single side border-radius
 .border-top-radius(@radius) {
-  border-top-right-radius: @radius;
-   border-top-left-radius: @radius;
+  .border-top-right-radius(@radius);
+  .border-top-left-radius(@radius);
 }
 .border-right-radius(@radius) {
-  border-bottom-right-radius: @radius;
-     border-top-right-radius: @radius;
+  .border-bottom-right-radius(@radius);
+  .border-top-right-radius(@radius);
 }
 .border-bottom-radius(@radius) {
-  border-bottom-right-radius: @radius;
-   border-bottom-left-radius: @radius;
+  .border-bottom-right-radius(@radius);
+  .border-bottom-left-radius(@radius);
 }
 .border-left-radius(@radius) {
-  border-bottom-left-radius: @radius;
-     border-top-left-radius: @radius;
+  .border-bottom-left-radius(@radius);
+  .border-top-left-radius(@radius);
 }
 
 // Drop shadows
@@ -569,7 +569,7 @@
   padding: @padding-vertical @padding-horizontal;
   font-size: @font-size;
   line-height: @line-height;
-  border-radius: @border-radius;
+  .border-radius(@border-radius);
 }
 
 // Pagination
@@ -944,7 +944,7 @@
   padding: @padding-vertical @padding-horizontal;
   font-size: @font-size;
   line-height: @line-height;
-  border-radius: @border-radius;
+  .border-radius(@border-radius);
 
   select& {
     height: @input-height;
